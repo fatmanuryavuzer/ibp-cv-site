@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+.hero {
+    background: linear-gradient(135deg, #1f2937, #374151);
+    color: white;
+    padding: 35px 20px;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.photo-box img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.hero h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.hero h2 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #d1d5db;
+}
+
+.theme-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+.card {
+    background-color: white;
+    margin-bottom: 18px;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    color: #1f2937;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 6px;
+}
+
+.card h3 {
+    color: #374151;
+    margin-top: 8px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background-color: #e0ecff;
+    color: #1d4ed8;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.project {
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.project:last-child {
+    border-bottom: none;
+}
+
+.detail-btn {
+    margin-top: 8px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #1f2937;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.detail-btn:hover {
+    background-color: #374151;
+}
+
+.detail {
+    display: none;
+    margin-top: 8px;
+    background-color: #f3f4f6;
+    padding: 10px;
+    border-left: 4px solid #1f2937;
+}
+
+.contact a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.github-btn {
+    display: inline-block;
+    margin-top: 12px;
+    background-color: #111827;
+    color: white !important;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 18px;
+    background-color: #1f2937;
+    color: white;
+    margin-top: 25px;
+}
+
+/* Koyu tema */
+.dark {
+    background-color: #111827;
+    color: #f9fafb;
+}
+
+.dark .card {
+    background-color: #1f2937;
+}
+
+.dark .card h2,
+.dark .card h3 {
+    color: #f9fafb;
+}
+
+.dark .detail {
+    background-color: #374151;
+}
+
+/* Mobil uyum */
+@media (max-width: 600px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .theme-btn {
+        position: static;
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+}
