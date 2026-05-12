@@ -8,126 +8,135 @@
 </head>
 <body>
 
-    <header class="hero">
-        <button id="themeBtn" class="theme-btn">🌙 Tema Değiştir</button>
+    <div class="cv-wrapper">
 
-        <div class="hero-content">
+        <aside class="sidebar">
             <div class="photo-box">
                 <img src="profile.jpeg" alt="Fatma Nur Yavuzer">
             </div>
 
-            <div>
-                <h1>Fatma Nur Yavuzer</h1>
-                <h2>Bilgisayar Mühendisliği Öğrencisi</h2>
-                <p>Ankara, Türkiye | fatmayvzr6@gmail.com</p>
+            <h1>Fatma Nur Yavuzer</h1>
+            <p class="job-title">Bilgisayar Mühendisliği Öğrencisi</p>
+
+            <div class="side-section">
+                <h3>Kişisel Bilgiler</h3>
+                <ul class="info-list">
+                    <li><strong>Konum:</strong> Ankara, Türkiye</li>
+                    <li><strong>E-posta:</strong> fatmayvzr6@gmail.com</li>
+                    <li><strong>GitHub:</strong> 
+                        <a href="https://github.com/fatmanuryavuzer" target="_blank">
+                            fatmanuryavuzer
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </header>
 
-    <main class="container">
-
-        <section class="card">
-            <h2>Hakkımda</h2>
-            <p>
-                Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. Eğitim sürecinde aldığım
-                algoritmalar ve veri yapıları gibi temel mühendislik dersleriyle sağlam
-                bir teorik altyapıya sahibim. Özellikle Yapay Zeka ve Makine Öğrenmesi
-                alanlarında kendimi geliştirmeyi hedefliyorum.
-            </p>
-        </section>
-
-        <section class="card">
-            <h2>Eğitim</h2>
-            <h3>Karabük Üniversitesi, Mühendislik Fakültesi</h3>
-            <p>Bilgisayar Mühendisliği Lisansı (%100 İngilizce)</p>
-            <p><strong>2022 - Devam Ediyor</strong></p>
-            <p>Odak Alanları: Yapay Zeka, Makine Öğrenmesi</p>
-        </section>
-
-        <section class="card">
-            <h2>Teknik Yetkinlikler</h2>
-
-            <div class="skills">
-                <span>Python</span>
-                <span>NumPy</span>
-                <span>Pandas</span>
-                <span>C</span>
-                <span>C#</span>
-                <span>SQL</span>
-                <span>Java</span>
-                <span>JavaScript</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>PHP</span>
+            <div class="side-section">
+                <h3>Diller</h3>
+                <p>İngilizce (B1)</p>
             </div>
-        </section>
 
-        <section class="card">
-            <h2>Projeler</h2>
+            <div class="side-section">
+                <h3>Teknik Yetkinlikler</h3>
+                <div class="skills">
+                    <span>Python</span>
+                    <span>NumPy</span>
+                    <span>Pandas</span>
+                    <span>C</span>
+                    <span>C#</span>
+                    <span>SQL</span>
+                    <span>Java</span>
+                    <span>JavaScript</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>PHP</span>
+                </div>
+            </div>
+        </aside>
 
-            <div class="project">
-                <h3>TÜBİTAK 2209-A Araştırma Projesi</h3>
+        <main class="main-content">
+
+            <section class="content-section">
+                <h2>Profil</h2>
                 <p>
-                    Uyku Apnesi İçin Yapay Zekâ Tabanlı Erken Uyarı Sensör Sistemi
-                    üzerine geliştirilen araştırma projesidir.
+                    Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. Eğitim sürecinde aldığım
+                    algoritmalar, veri yapıları ve temel mühendislik dersleri ile güçlü bir teorik
+                    altyapı kazandım. Özellikle Yapay Zeka ve Makine Öğrenmesi alanlarında kendimi
+                    geliştirerek bu alanlarda projeler üretmeyi hedefliyorum. Disiplinli, öğrenmeye
+                    açık ve teknik süreçlerde aktif sorumluluk almayı seven bir yapıya sahibim.
                 </p>
-                <button class="detail-btn">Detay Göster</button>
-                <p class="detail">
-                    Çok modlu sensör verileri kullanılarak makine öğrenmesi tabanlı
-                    erken uyarı algoritması geliştirilmesi amaçlanmıştır.
-                </p>
-            </div>
+            </section>
 
-            <div class="project">
-                <h3>Diş Kliniği Otomasyonu</h3>
+            <section class="content-section">
+                <h2>Eğitim</h2>
+
+                <div class="item">
+                    <div class="item-date">2022 - Devam Ediyor</div>
+                    <div class="item-detail">
+                        <h4>Karabük Üniversitesi, Mühendislik Fakültesi</h4>
+                        <p>Bilgisayar Mühendisliği Lisansı (%100 İngilizce)</p>
+                        <p>Odak Alanları: Yapay Zeka, Makine Öğrenmesi</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Projeler</h2>
+
+                <div class="item">
+                    <div class="item-date">TÜBİTAK 2209-A</div>
+                    <div class="item-detail">
+                        <h4>Uyku Apnesi İçin Yapay Zekâ Tabanlı Erken Uyarı Sensör Sistemi</h4>
+                        <p>
+                            Çok modlu sensör verileri (akustik, titreşim, EDA) kullanılarak
+                            makine öğrenmesi tabanlı proaktif erken uyarı algoritması geliştirildi.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-date">C# & SQL</div>
+                    <div class="item-detail">
+                        <h4>Diş Kliniği Otomasyonu</h4>
+                        <p>
+                            C# ve SQL Server teknolojileri kullanılarak geliştirilen bu projede
+                            hasta takip, randevu yönetimi ve kullanıcı yetkilendirme modülleri uygulandı.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-date">Python</div>
+                    <div class="item-detail">
+                        <h4>Soket Programlama Projesi</h4>
+                        <p>
+                            Python Socket Programming kullanılarak geliştirilen veri iletim sisteminde
+                            CRC, Parity ve Hamming Code algoritmaları ile hata kontrolü sağlandı.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Sertifikalar</h2>
+                <ul class="plain-list">
+                    <li>Sıfırdan İleri Seviye Python Programlama - BTK Akademi</li>
+                    <li>C Programlama Dili - BTK Akademi</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h2>Bağlantılar</h2>
                 <p>
-                    C# ve SQL Server kullanılarak geliştirilen hasta ve randevu takip sistemidir.
+                    <a class="github-btn" href="https://github.com/fatmanuryavuzer/ibp-cv-site" target="_blank">
+                        Proje Kodlarını GitHub’da Gör
+                    </a>
                 </p>
-                <button class="detail-btn">Detay Göster</button>
-                <p class="detail">
-                    Projede hasta kayıt, randevu yönetimi ve kullanıcı yetkilendirme
-                    modülleri kullanılmıştır.
-                </p>
-            </div>
+            </section>
 
-            <div class="project">
-                <h3>Soket Programlama Projesi</h3>
-                <p>
-                    Python Socket Programming kullanılarak geliştirilen veri iletim sistemidir.
-                </p>
-                <button class="detail-btn">Detay Göster</button>
-                <p class="detail">
-                    CRC, Parity ve Hamming Code algoritmaları ile hata kontrol mekanizmaları
-                    uygulanmıştır.
-                </p>
-            </div>
-        </section>
+        </main>
 
-        <section class="card">
-            <h2>Sertifikalar ve Diller</h2>
-            <ul>
-                <li>İngilizce - B1</li>
-                <li>Sıfırdan İleri Seviye Python Programlama - BTK Akademi</li>
-                <li>C Programlama Dili - BTK Akademi</li>
-            </ul>
-        </section>
+    </div>
 
-        <section class="card contact">
-            <h2>İletişim</h2>
-            <p>E-posta: <a href="mailto:fatmayvzr6@gmail.com">fatmayvzr6@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/fatmanuryavuzer" target="_blank">github.com/fatmanuryavuzer</a></p>
-
-            <a class="github-btn" href="https://github.com/fatmanuryavuzer/ibp-cv-site" target="_blank">
-                Proje Kodlarını GitHub'da Gör
-            </a>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>© 2026 Fatma Nur Yavuzer | Kişisel CV Web Sitesi</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
