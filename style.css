@@ -23,9 +23,8 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
 }
 
-/* SOL TARAF */
 .sidebar {
-    background: linear-gradient(180deg, #2d254b, #44366d);
+    background: linear-gradient(180deg, #2d3748, #4a5568);
     color: white;
     padding: 35px 25px;
 }
