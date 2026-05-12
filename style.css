@@ -258,3 +258,32 @@ body {
     color: #374151;
     line-height: 1.7;
 }
+.info-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+
+.info-list i {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.18);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    flex-shrink: 0;
+}
+
+.info-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.info-list a:hover {
+    text-decoration: underline;
+}
