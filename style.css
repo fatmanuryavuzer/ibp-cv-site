@@ -206,4 +206,17 @@ body {
     .content-section h2 {
         font-size: 26px;
     }
+}.link-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.email-btn {
+    background-color: #2f4f6f;
+}
+
+.email-btn:hover {
+    background-color: #20384f;
 }
