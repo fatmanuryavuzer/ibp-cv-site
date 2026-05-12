@@ -4,160 +4,235 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
-    color: #222;
-    line-height: 1.6;
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #eef1f5;
+    color: #1f2933;
+    line-height: 1.7;
+}
+
+/* Üst Alan */
 .hero {
-    background: linear-gradient(135deg, #1f2937, #374151);
+    background: linear-gradient(135deg, #1b263b, #2f3e55);
     color: white;
-    padding: 35px 20px;
+    padding: 48px 20px;
     position: relative;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
 }
 
 .hero-content {
-    max-width: 900px;
+    max-width: 950px;
     margin: auto;
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 34px;
+}
+
+/* Fotoğraf Alanı */
+.photo-box {
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid rgba(255, 255, 255, 0.95);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.28);
+    flex-shrink: 0;
+    background-color: #d9dee7;
 }
 
 .photo-box img {
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid white;
+    object-position: center 35%;
+    transform: scale(1.12);
 }
 
 .hero h1 {
-    font-size: 32px;
-    letter-spacing: 1px;
+    font-size: 38px;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
 }
 
 .hero h2 {
-    font-size: 18px;
-    font-weight: normal;
-    color: #d1d5db;
+    font-size: 20px;
+    font-weight: 400;
+    color: #dbe4ee;
+    margin-bottom: 4px;
 }
 
+.hero p {
+    color: #f3f6fa;
+    font-weight: 500;
+}
+
+/* Tema Butonu */
 .theme-btn {
     position: absolute;
-    top: 15px;
-    right: 20px;
-    padding: 8px 12px;
+    top: 20px;
+    right: 28px;
+    padding: 9px 15px;
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     cursor: pointer;
+    background-color: #f7f3ea;
+    color: #1f2933;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
 }
 
+.theme-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Ana Alan */
 .container {
-    max-width: 900px;
-    margin: 25px auto;
-    padding: 0 15px;
+    max-width: 950px;
+    margin: 34px auto;
+    padding: 0 18px;
 }
 
+/* Kartlar */
 .card {
-    background-color: white;
-    margin-bottom: 18px;
-    padding: 22px;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    background: rgba(255, 255, 255, 0.92);
+    margin-bottom: 22px;
+    padding: 26px;
+    border-radius: 18px;
+    box-shadow: 0 8px 22px rgba(31, 41, 55, 0.10);
+    border: 1px solid rgba(210, 218, 228, 0.8);
+    transition: 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(31, 41, 55, 0.16);
 }
 
 .card h2 {
-    color: #1f2937;
-    margin-bottom: 12px;
-    border-bottom: 2px solid #e5e7eb;
-    padding-bottom: 6px;
+    color: #172033;
+    margin-bottom: 14px;
+    border-bottom: 2px solid #d7dee8;
+    padding-bottom: 8px;
+    font-size: 25px;
 }
 
 .card h3 {
-    color: #374151;
+    color: #2b3a50;
     margin-top: 8px;
 }
 
+.card p,
+.card li {
+    font-size: 16px;
+}
+
+/* Yetenekler */
 .skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 11px;
 }
 
 .skills span {
-    background-color: #e0ecff;
-    color: #1d4ed8;
-    padding: 8px 12px;
-    border-radius: 20px;
-    font-weight: bold;
+    background-color: #e7edf6;
+    color: #243b5a;
+    padding: 9px 14px;
+    border-radius: 22px;
+    font-weight: 600;
     font-size: 14px;
+    border: 1px solid #c9d4e2;
 }
 
+/* Projeler */
 .project {
-    margin-bottom: 18px;
-    padding-bottom: 14px;
-    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 20px;
+    padding: 18px;
+    border-radius: 14px;
+    background-color: #f7f9fc;
+    border: 1px solid #dfe6ef;
 }
 
 .project:last-child {
-    border-bottom: none;
+    margin-bottom: 0;
 }
 
 .detail-btn {
-    margin-top: 8px;
-    padding: 8px 12px;
+    margin-top: 10px;
+    padding: 9px 14px;
     border: none;
-    background-color: #1f2937;
+    background-color: #243b5a;
     color: white;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .detail-btn:hover {
-    background-color: #374151;
+    background-color: #172033;
 }
 
 .detail {
     display: none;
-    margin-top: 8px;
-    background-color: #f3f4f6;
-    padding: 10px;
-    border-left: 4px solid #1f2937;
+    margin-top: 10px;
+    background-color: #edf2f8;
+    padding: 12px;
+    border-left: 4px solid #243b5a;
+    border-radius: 8px;
 }
 
+/* İletişim */
 .contact a {
-    color: #1d4ed8;
+    color: #1f4e79;
     text-decoration: none;
+    font-weight: 600;
+}
+
+.contact a:hover {
+    text-decoration: underline;
 }
 
 .github-btn {
     display: inline-block;
-    margin-top: 12px;
-    background-color: #111827;
+    margin-top: 14px;
+    background-color: #243b5a;
     color: white !important;
-    padding: 10px 15px;
-    border-radius: 8px;
+    padding: 11px 17px;
+    border-radius: 10px;
+    text-decoration: none !important;
+    transition: 0.25s ease;
 }
 
+.github-btn:hover {
+    background-color: #172033;
+    transform: translateY(-2px);
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 18px;
-    background-color: #1f2937;
+    padding: 20px;
+    background-color: #1b263b;
     color: white;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
-/* Koyu tema */
+/* Koyu Tema */
 .dark {
     background-color: #111827;
-    color: #f9fafb;
+    color: #f4f6f8;
+}
+
+.dark .hero {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
 }
 
 .dark .card {
     background-color: #1f2937;
+    border-color: #374151;
 }
 
 .dark .card h2,
@@ -165,24 +240,53 @@ footer {
     color: #f9fafb;
 }
 
+.dark .project {
+    background-color: #273244;
+    border-color: #46556a;
+}
+
+.dark .skills span {
+    background-color: #374151;
+    color: #e5e7eb;
+    border-color: #4b5563;
+}
+
 .dark .detail {
     background-color: #374151;
 }
 
-/* Mobil uyum */
-@media (max-width: 600px) {
+/* Mobil Uyum */
+@media (max-width: 700px) {
+    .hero {
+        padding: 36px 18px;
+    }
+
     .hero-content {
         flex-direction: column;
         text-align: center;
+        gap: 18px;
+    }
+
+    .photo-box {
+        width: 145px;
+        height: 145px;
     }
 
     .theme-btn {
         position: static;
         display: block;
-        margin: 0 auto 20px;
+        margin: 0 auto 24px;
     }
 
     .hero h1 {
-        font-size: 25px;
+        font-size: 29px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .card {
+        padding: 21px;
     }
 }
